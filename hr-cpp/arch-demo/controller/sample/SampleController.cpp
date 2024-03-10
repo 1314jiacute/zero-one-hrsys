@@ -30,6 +30,7 @@ SamplePageJsonVO::Wrapper SampleController::execQuerySample(const SampleQuery::W
 	auto jvo = SamplePageJsonVO::createShared();
 	jvo->success(result);
 	return jvo;
+	//controller 层  向显示层返回的数据对象 jvo    
 }
 
 Uint64JsonVO::Wrapper SampleController::execAddSample(const SampleDTO::Wrapper& dto)
