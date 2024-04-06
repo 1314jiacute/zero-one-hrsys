@@ -1,8 +1,9 @@
 ﻿# CMakeList.txt: 顶层 CMake 项目文件，在此处执行全局配置
 # 并包含子项目。
 #
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required (VERSION 3.10)
 add_definitions(-std=c++11)
+
 # 指定工程名
 project ("zero-one-hrsys")
 
@@ -84,8 +85,8 @@ add_subdirectory ("nacos-register")
 # 这是示例模块，后期可以不编译它
  #add_subdirectory ("arch-demo")
 # 在后面添加你的模块
-#add_subdirectory ("hr-cx")
-add_subdirectory ("hr-c1-orgmanage")
+add_subdirectory ("hr-cx")
+#add_subdirectory ("hr-c1-orgmanage")
 #add_subdirectory ("hr-c1-common")
 #add_subdirectory ("hr-c2-basmanager")
 #add_subdirectory ("hr-c2-orgmanager")
